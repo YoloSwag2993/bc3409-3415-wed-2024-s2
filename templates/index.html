@@ -1,19 +1,19 @@
 <head>
-    <meta name="viewport" content="width = device-width,initial-scale = 1.0">
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
 </head>
 
 <body>
-    <div class="container">
+    <div class = "container">
         <h2>Financial Web Application</h2>
         <form action="/prediction" method="post">
             <input type="submit" value="Prediction DBS Share Price">
-        </form>   
+        </form>
         <form action="/text_sentiment" method="post">
             <input type="submit" value="Sentiment Analysis">
-        </form>   
+        </form>
         <form action="/paynow" method="post">
             <input type="submit" value="Paynow">
-        </form>   
+        </form>
     </div>
 </body>
