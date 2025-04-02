@@ -29,7 +29,7 @@ def sentiment_result():
 
 @app.route("/paynow", methods=["Get","POST"])
 def paynow():
-    return(render_template("paynow.html",r=r))
+    return(render_template("paynow.html"))
 
 if __name__ == "__main__":
     app.run()
